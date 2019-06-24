@@ -1,6 +1,6 @@
 # Project-2
 
-The best project anyh of us have literally ever seen.
+The best project any of us have literally ever seen.
 
 Includes:
 
