@@ -71,18 +71,7 @@ module.exports = function(sequelize, DataTypes) {
         defaultValue: Sequelize.literal("CURRENT_TIMESTAMP")
       }
     },
-    {
-      // classMethods: {
-      //     associate: function(models) {
-      //         Movie.belongsTo(models.Customer, {
-      //             onDelete: "cascade",
-      //             foreignKey: {
-      //                 allowNull: true
-      //             }
-      //         });
-      //     }
-      // }
-    }
+    {}
   );
 
   // Return the model we defined.
