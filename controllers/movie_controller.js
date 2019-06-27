@@ -61,7 +61,7 @@ router.post("/api/new/movie", function(req, res) {
         url: "https://api.themoviedb.org/3/movie/" + imdbId + "/videos",
         qs: {
           language: "en-US",
-          api_key: "d50548305ff81a83c1c65efa4ce59583"
+          apiKey: "d50548305ff81a83c1c65efa4ce59583"
         },
         body: "{}"
       };
