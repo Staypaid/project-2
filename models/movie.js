@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 // Import Sequelize library for `Sequelize.literal`.
 var Sequelize = require("sequelize");
 
@@ -11,47 +12,47 @@ module.exports = function(sequelize, DataTypes) {
         primaryKey: true,
         allowNull: false
       },
-      movieName: {
+      movie_name: {
         type: DataTypes.STRING(100),
         allowNull: false
       },
-      moviePoster: {
+      movie_poster: {
         type: DataTypes.TEXT,
         allowNull: false
       },
-      movieGenre: {
+      movie_genre: {
         type: DataTypes.STRING(30),
         allowNull: false
       },
-      movieTime: {
+      movie_time: {
         type: DataTypes.STRING(30),
         allowNull: false
       },
-      moviePlot: {
+      movie_plot: {
         type: DataTypes.STRING(1000),
         allowNull: false
       },
-      movieDirector: {
+      movie_director: {
         type: DataTypes.STRING(100),
         allowNull: false
       },
-      movieActors: {
+      movie_actors: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      movieYear: {
+      movie_year: {
         type: DataTypes.INTEGER(4),
         allowNull: false
       },
-      movieTrailer: {
+      movie_trailer: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      movieRatingImdb: {
+      movie_ratingImdb: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      movieRatingRotten: {
+      movie_ratingRotten: {
         type: DataTypes.STRING(30),
         allowNull: false
       },
@@ -71,7 +72,18 @@ module.exports = function(sequelize, DataTypes) {
         defaultValue: Sequelize.literal("CURRENT_TIMESTAMP")
       }
     },
-    {}
+    {
+      // classMethods: {
+      //     associate: function(models) {
+      //         Movie.belongsTo(models.Customer, {
+      //             onDelete: "cascade",
+      //             foreignKey: {
+      //                 allowNull: true
+      //             }
+      //         });
+      //     }
+      // }
+    }
   );
 
   // Return the model we defined.

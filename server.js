@@ -1,3 +1,4 @@
+// Import dependencies.
 var express = require("express");
 var path = require("path");
 var exphbs = require("express-handlebars");

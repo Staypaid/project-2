@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+// Import NPM dependency and Express router function.
 var express = require("express");
 var router = express.Router();
 var request = require("request");
@@ -61,7 +63,7 @@ router.post("/api/new/movie", function(req, res) {
         url: "https://api.themoviedb.org/3/movie/" + imdbId + "/videos",
         qs: {
           language: "en-US",
-          apiKey: "d50548305ff81a83c1c65efa4ce59583"
+          api_key: "d50548305ff81a83c1c65efa4ce59583"
         },
         body: "{}"
       };
@@ -82,17 +84,17 @@ router.post("/api/new/movie", function(req, res) {
           videos = JSON.parse(result).results[0].key;
           console.log(videos);
           db.Movie.create({
-            movieName: JSON.parse(body).Title,
-            moviePoster: JSON.parse(body).Poster,
-            movieGenre: JSON.parse(body).Genre,
-            movieTime: JSON.parse(body).Runtime,
-            moviePlot: JSON.parse(body).Plot,
-            movieDirector: JSON.parse(body).Director,
-            movieActors: JSON.parse(body).Actors,
-            movieYear: JSON.parse(body).Year,
-            movieTrailer: videos,
-            movieRatingImdb: JSON.parse(body).Ratings[0].Value,
-            movieRatingRotten: JSON.parse(body).Ratings[1].Value
+            movie_name: JSON.parse(body).Title,
+            movie_poster: JSON.parse(body).Poster,
+            movie_genre: JSON.parse(body).Genre,
+            movie_time: JSON.parse(body).Runtime,
+            movie_plot: JSON.parse(body).Plot,
+            movie_director: JSON.parse(body).Director,
+            movie_actors: JSON.parse(body).Actors,
+            movie_year: JSON.parse(body).Year,
+            movie_trailer: videos,
+            movie_ratingImdb: JSON.parse(body).Ratings[0].Value,
+            movie_ratingRotten: JSON.parse(body).Ratings[1].Value
           }).then(function() {
             res.redirect("/");
           });
