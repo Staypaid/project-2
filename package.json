@@ -1,5 +1,4 @@
 {
-<<<<<<< Updated upstream
   "name": "project-2",
   "version": "1.0.0",
   "description": "Project 2 Starter",
@@ -50,35 +49,4 @@
     "url": "https://github.com/Dcaraza/Project-2/issues"
   },
   "homepage": "https://github.com/Dcaraza/Project-2#readme"
-=======
-    "name": "project-2",
-    "version": "1.0.0",
-    "description": "project-2",
-    "main": "server.js",
-    "dependencies": {
-        "body-parser": "^1.16.0",
-        "express": "^4.14.0",
-        "express-handlebars": "^3.0.0",
-        "method-override": "^2.3.7",
-        "mysql": "^2.13.0",
-        "omdb": "^0.8.0",
-        "request": "^2.83.0",
-        "sequelize": "^3.30.0",
-        "serve-favicon": "^2.3.2"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Dcaraza/Project-2.git"
-    },
-    "author": "",
-    "bugs": {
-        "url": "https://github.com/Dcaraza/Project-2/issues"
-    },
-    "homepage": "https://github.com/Dcaraza/Project-2#readme"
->>>>>>> Stashed changes
 }
