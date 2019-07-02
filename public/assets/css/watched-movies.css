@@ -4,6 +4,7 @@
     overflow: auto;
     border-top: 6px solid rgb(26, 26, 26);;
 } 
+
 .watched-box{
     width: 100px;
     height:150px;
@@ -15,6 +16,7 @@
     border:0;
     float: left;  
 }
+
 .img-responsive{
     max-width: 100%; 
     height: auto;
