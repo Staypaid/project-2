@@ -11,7 +11,7 @@ var db = require("../models");
 // This route then hands the data it receives to handlebars so index can be rendered.
 router.get("/", function(req, res) {
   db.Movie.findAll({
-    order: "movie_name ASC"
+    order: [["movie_name", "ASC"]]
   }).then(function(data) {
     var hbsObject = {
       movies: data
@@ -47,6 +47,7 @@ router.post("/api/new/movie", function(req, res) {
   var movieName = req.body.name;
 
   var queryUrl = "http://omdbapi.com/?apikey=40e9cece&t=" + movieName;
+  console.log(queryUrl)
 
   request(queryUrl, function(error, response, body) {
     if (!error && JSON.parse(body).Response !== "False") {
@@ -81,8 +82,13 @@ router.post("/api/new/movie", function(req, res) {
           // res.send('SOMETHING WENT WRONG');
           res.redirect("/");
         } else {
-          videos = JSON.parse(result).results[0].key;
-          console.log(videos);
+          //console.log("RESULT");
+          //console.log(JSON.parse(result));
+          var infoParse = JSON.parse(result);
+          console.log(infoParse);
+          var videos = infoParse.results[0].key;
+          //console.log("VIDEOS");
+          //console.log(videos);
           db.Movie.create({
             movie_name: JSON.parse(body).Title,
             movie_poster: JSON.parse(body).Poster,
