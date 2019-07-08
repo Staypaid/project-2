@@ -48,5 +48,6 @@ JawsDB is an add-on for providing a fully functional MySQL Database server for u
 ## Prerequisites
 
 MySQL
+
 Node.js
 
