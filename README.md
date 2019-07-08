@@ -14,7 +14,7 @@ Vince
 
 ## Getting Started
 
-https://project2umbootcamp.herokuapp.com/
+https://moviepin.herokuapp.com/
 
 ## Technologies Used
 
