@@ -6,6 +6,10 @@
 -------HEADER------------------------------
 */
 
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-image: url("../images/bg.jpg")
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@
 }
 
 .header {
-    background-color: teal;
+    background-color:black;
     height: 60px;
     
 }
@@ -96,7 +100,7 @@
 
 .footer {
     bottom: 0;
-    background: teal;
+    background:black;
     height: 50px;
     width: 100%;
 }
