@@ -16,7 +16,7 @@ Vince
 
 ** Heroku Link Here **
 
-### Prerequisites
+## Prerequisites
 
 NPM Install
 
@@ -44,4 +44,9 @@ Sequelize (ORM)
 JawsDB (Heroku database add-on)
 
 JawsDB is an add-on for providing a fully functional MySQL Database server for use with your Heroku application.
+
+## Prerequisites
+
+MySQL
+Node.js
 
