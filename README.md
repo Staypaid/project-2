@@ -4,8 +4,11 @@ One Paragraph of project description goes here
 
 ## Team Members
 Eleani Pita
+
 Devin Caraza
+
 Amber Harper
+
 Vince
 
 ## Getting Started
