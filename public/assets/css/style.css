@@ -6,6 +6,10 @@
 -------HEADER------------------------------
 */
 
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-image: url("../images/bg.jpg")
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +17,16 @@
 }
 
 .header {
-    background-color: rgb(26, 26, 26);
+    background-color:black;
     height: 60px;
+    
 }
 
 #logo {
     height: 40px;
     margin: 10px 0 0 45px;
+    border: ridge;
+
 }
 
 
@@ -41,6 +48,7 @@
     border-radius: 0;
     float: right;
     height: 30px;
+    border: ridge;
 }
 
 #add-movie-image {
@@ -92,7 +100,7 @@
 
 .footer {
     bottom: 0;
-    background: rgb(26, 26, 26);
+    background:black;
     height: 50px;
     width: 100%;
 }
@@ -108,23 +116,28 @@
 
 #sort-box {
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 400px;
+
 }
 
 #sortYear-img {
     height: 30px;
+    border: ridge;
 }
 
 #sortYear-img:hover {
     opacity: 0.5;
+  
 }
 
 #sortRating-box {
-    margin-left: 30px;
+    margin-left: 100px;
+    
 }
 
 #sortRating-img {
     height: 30px;
+    border: ridge;
 }
 
 #sortRating-img:hover {

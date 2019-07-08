@@ -21,7 +21,7 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
       },
       movie_genre: {
-        type: DataTypes.STRING(30),
+        type: DataTypes.STRING(1000),
         allowNull: false
       },
       movie_time: {

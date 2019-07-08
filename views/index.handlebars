@@ -13,7 +13,7 @@
 
   		<div class="col-5" id="add-movie">
 			<form action='/api/new/movie' method=POST>
-			<input name="name" type="text" class="form-control" id="add-movie-input" placeholder="Add Movie Name">
+			<input name="name" type="text" class="form-control" id="add-movie-input" placeholder="Pin Your Movie">
 		<button id="add-movie-button"><img id="add-movie-image" src="assets/images/addBtn.jpg"></button>
 			</form>
 		</div>
@@ -152,31 +152,6 @@
 		 <!--end of movie box -->
 	
 
-</div>
-
-<!-- ==============================================
-		WATCHED MOVIES
-=============================================== -->
-<div class='row' id='watched-container'>
-	{{#each movies}}
-		{{#if this.watched}}
-			<div class="col-lg-1 col-md-2 col-sm-6 col-xs-12" id="movie-box">
-       			<div class="watched-box">
-					<div class="card" id="watched-form">
-						<form action="/{{this.id}}?_method=PUT" method="POST" >
-                        	
-							<img class="img-responsive" id="watched-movies" src={{this.movie_poster}}>
-                        	<a href="/" class="overlay link" id="unwatch"><button type="submit" class="btn" id="unwatch-btn">Unwatch it</button></a>
-
-                    	</form>
-					</div>
-				</div>
-			</div>
-		{{/if}}
-	{{/each}}
-
-</div>
-	
 	
 </main>
 
