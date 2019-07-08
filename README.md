@@ -28,6 +28,12 @@ Cards, Modal
 
 Express.js (Server framework)
 
+Open Movie Database (OMDb) API
+
+Movie database API
+
+GET and POST routes for retrieving and adding new data
+
 Handlebars (Templating engine)
 
 Heroku (Cloud platform)
@@ -39,7 +45,7 @@ Node.js (Javascript environment)
 Sequelize (ORM)
 
 
-## NEW Technologies Used
+## New Technology Used
 
 JawsDB (Heroku database add-on)
 
