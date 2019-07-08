@@ -1,6 +1,7 @@
 # MoviePin
 
-One Paragraph of project description goes here
+A web application that serves as a person medial library where users can "pin" movies they would like to watch and then unselect it once they have watched it.  Using the Open Movie Database (OMDb) API to search for movie titles, the user can view a brief description of the movie including; movie poster, genre, cast, director(s), year of release and ratings. The Movie database API was also used to add a trailer of the movie selected by the user to pin. 
+
 
 ## Team Members
 Eleani Pita
@@ -17,10 +18,30 @@ Vince
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+NPM Install
+
+## Technologies Used
+
+Bootstrap 4 (Front-end framework)
+
+Cards, Modal
+
+Express.js (Server framework)
+
+Handlebars (Templating engine)
+
+Heroku (Cloud platform)
+
+MySQL (RDBMS)
+
+Node.js (Javascript environment)
+
+Sequelize (ORM)
 
 
+## NEW Technologies Used
 
-# Project-2
+JawsDB (Heroku database add-on)
 
+JawsDB is an add-on for providing a fully functional MySQL Database server for use with your Heroku application.
 
