@@ -57,8 +57,6 @@ router.post("/api/new/movie", function(req, res) {
 
       console.log(imdbId);
 
-      var videos = "";
-
       var options = {
         method: "GET",
         url: "https://api.themoviedb.org/3/movie/" + imdbId + "/videos",
