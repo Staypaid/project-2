@@ -16,10 +16,6 @@ Vince
 
 ** Heroku Link Here **
 
-## Prerequisites
-
-NPM Install
-
 ## Technologies Used
 
 Bootstrap 4 (Front-end framework)
@@ -57,3 +53,8 @@ MySQL
 
 Node.js
 
+## Future Development
+
+Sort By Year 
+
+Sort By Rating
