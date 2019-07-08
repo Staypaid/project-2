@@ -34,9 +34,9 @@ Handlebars (Templating engine)
 
 Heroku (Cloud platform)
 
-MySQL (RDBMS)
+MySQL
 
-Node.js (Javascript environment)
+Node.js
 
 Sequelize (ORM)
 
