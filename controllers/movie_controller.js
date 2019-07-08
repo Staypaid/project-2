@@ -9,7 +9,7 @@ var db = require("../models");
 
 // GET route which calls uses Sequelize's findAll method.
 // This route then hands the data it receives to handlebars so index can be rendered.
-router.get("*", function(req, res) {
+router.get("/", function(req, res) {
   db.Movie.findAll({
     order: [["movie_name", "ASC"]]
   }).then(function(data) {
