@@ -18,7 +18,7 @@ Vince
 
 ## Technologies Used
 
-Bootstrap 4 (Front-end framework)
+Bootstrap (Front-end framework)
 
 Cards, Modal
 
