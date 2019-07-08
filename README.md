@@ -20,8 +20,6 @@ Vince
 
 Bootstrap (Front-end framework)
 
-Cards, Modal
-
 Express.js (Server framework)
 
 Open Movie Database (OMDb) API
